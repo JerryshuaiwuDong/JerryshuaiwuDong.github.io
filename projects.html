@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Engineering and product case studies by Shuaiwu Dong, including Spartina Technology and Edge Task Hub.">
+  <meta property="og:title" content="Projects | Shuaiwu Dong">
+  <meta property="og:description" content="AI infrastructure, B2B systems, automation, and edge AI built beyond the paper.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://jerryshuaiwudong.github.io/projects.html">
+  <title>Projects | Shuaiwu Dong</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <p class="site-name"><a href="index.html">Shuaiwu Dong</a></p>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="projects.html" aria-current="page">Projects</a>
+      <a href="mailto:jerryshuaiwudong@outlook.com">Email</a>
+      <a href="https://github.com/JerryshuaiwuDong">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-intro">
+      <p class="eyebrow">Projects</p>
+      <h1>Building AI systems beyond the paper.</h1>
+      <p>I use engineering projects to test the same questions that motivate my research: what happens when models have to work with limited compute, private data, real users, existing tools, deployment constraints, and concrete deliverables?</p>
+    </div>
+
+    <article class="project-entry" id="spartina">
+      <p class="kicker">0→1 Technical Execution</p>
+      <h2 class="section-heading">Spartina Technology</h2>
+      <p class="research-question">How do you turn a collection of AI models and technical ideas into infrastructure, products, workflows, and deliverables that a real team or client can actually use?</p>
+      <div class="topic-chips" aria-label="Spartina technical areas">
+        <span class="tech-chip">AI Infrastructure</span>
+        <span class="tech-chip">B2B AI Systems</span>
+        <span class="tech-chip">Product &amp; Delivery</span>
+      </div>
+      <div class="system-diagram" aria-label="Spartina Technology execution flow">
+        <span class="diagram-node">Client / product need</span>
+        <span class="diagram-arrow">→</span>
+        <span class="diagram-node">AI Infrastructure</span>
+        <span class="diagram-arrow">→</span>
+        <span class="diagram-node">B2B AI Systems</span>
+        <span class="diagram-arrow">→</span>
+        <span class="diagram-node">Product & Delivery</span>
+      </div>
+      <div class="detail-grid">
+        <div>
+          <h3>AI Infrastructure</h3>
+          <p>I worked on GPU account and environment management, shared model and dataset organization, multimodal image-generation pipelines, prompt libraries, model testing, and an MCP-based bridge connecting AI generation with team file delivery and collaboration.</p>
+        </div>
+        <div>
+          <h3>B2B AI Systems</h3>
+          <p>I translated broad capabilities into concrete proposals and demos for industrial vision, data augmentation, multimodal generation, environmental monitoring, e-commerce content, and automation. The emphasis was on defining inputs, outputs, evaluation, and delivery rather than presenting generic AI capability.</p>
+        </div>
+        <div>
+          <h3>Product & Delivery</h3>
+          <p>I planned and maintained the company website, technical positioning, public demos, content workflows, automated publishing experiments, and operating processes that connected ideas to something a partner could inspect and use.</p>
+        </div>
+        <div>
+          <h3>My Role</h3>
+          <p>Technical Partner and core execution lead across strategy, technical infrastructure, product presentation, automation, B2B solution design, and day-to-day delivery work described in the current project record.</p>
+        </div>
+      </div>
+      <div class="text-links">
+        <a class="icon-link" href="https://spartina.tech"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="4" width="16" height="16" rx="2"></rect><path d="M8 9h8M8 13h5"></path></svg> Website <span class="external-cue" aria-hidden="true">↗</span></a>
+        <a class="icon-link" href="https://yingda-yu.github.io/SpartinaTech/team"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="4" width="16" height="16" rx="2"></rect><path d="M8 9h8M8 13h5"></path></svg> Team <span class="external-cue" aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+
+    <article class="project-entry" id="edge-task-hub">
+      <p class="kicker">Edge AI · Raspberry Pi</p>
+      <h2 class="section-heading">Edge Task Hub</h2>
+      <p class="research-question">Instead of sending every task to the largest available model, can a small physical device route work among rules, local language models, and classical ML according to privacy, latency, quality, and resource constraints?</p>
+      <div class="topic-chips" aria-label="Edge Task Hub technical areas">
+        <span class="tech-chip">Edge AI</span>
+        <span class="tech-chip">Local LLM</span>
+        <span class="tech-chip">Raspberry Pi</span>
+        <span class="tech-chip">Resource-Aware Routing</span>
+      </div>
+      <div class="system-diagram" aria-label="Edge Task Hub resource-aware routing architecture">
+        <span class="diagram-node">Reminder / News / Private document / Health metrics</span>
+        <span class="diagram-arrow">→</span>
+        <span class="diagram-node">resource-aware router</span>
+        <span class="diagram-arrow">→</span>
+        <span class="diagram-node">Rules</span>
+        <span class="diagram-node">Local Qwen</span>
+        <span class="diagram-node">Isolation Forest</span>
+        <span class="diagram-arrow">→</span>
+        <span class="diagram-node">Raspberry Pi + Feishu</span>
+      </div>
+      <div class="detail-grid">
+        <div>
+          <h3>System</h3>
+          <p>The hub uses FastAPI, Jinja2, scheduled jobs, SQLite-backed execution records, Feishu for interaction, Ollama for local Qwen inference, and an Isolation Forest for local device-health anomaly scoring.</p>
+        </div>
+        <div>
+          <h3>Routing</h3>
+          <p>Deterministic reminder parsing is attempted first. Local LLM inference is used only when rules cannot resolve an apparently valid request, and the structured result is checked again before execution. Private-document text stays on the device rather than being sent to a cloud model.</p>
+        </div>
+        <div>
+          <h3>Real-device validation</h3>
+          <p>Documented Raspberry Pi runs showed a quality/latency trade-off between local Qwen model sizes. The project also collected 4,345 device-metric samples and marked 82 anomaly events in its initial monitoring window; those anomaly counts are operational observations, not claims of classifier accuracy.</p>
+        </div>
+        <div>
+          <h3>My Role</h3>
+          <p>I co-developed the system, participated in Raspberry Pi deployment validation, organized the experimental results, and served as the project-report first author and public repository maintainer.</p>
+        </div>
+      </div>
+      <div class="text-links"><a class="icon-link" href="https://github.com/JerryshuaiwuDong/edge-task-hub"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 7-5 5 5 5M15 7l5 5-5 5"></path></svg> Code</a></div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Shuaiwu Dong · Researcher × Builder</p>
+  </footer>
+</body>
+</html>

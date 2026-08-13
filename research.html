@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research by Shuaiwu Dong on trustworthy multimodal AI, personalized VLA systems, medical AI, and embodied personalization.">
+  <meta property="og:title" content="Research | Shuaiwu Dong">
+  <meta property="og:description" content="Trustworthy multimodal AI, personalized driving VLA, medical vision, and current embodied-agent directions.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://jerryshuaiwudong.github.io/research.html">
+  <title>Research | Shuaiwu Dong</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <p class="site-name"><a href="index.html">Shuaiwu Dong</a></p>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="research.html" aria-current="page">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="mailto:jerryshuaiwudong@outlook.com">Email</a>
+      <a href="https://github.com/JerryshuaiwuDong">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-intro">
+      <p class="eyebrow">Research</p>
+      <h1>Research Interests</h1>
+      <p class="hero-line">How can AI systems perceive, reason, personalize, and act reliably when their outputs matter in the real world?</p>
+      <p>I work across trustworthy multimodal AI, vision-language-action models, personalized embodied agents, medical AI, and edge deployment. The common thread is moving from offline model capability toward systems whose decisions can be inspected, adapted, and trusted under real constraints.</p>
+      <ul class="topic-chips" aria-label="Research areas">
+        <li>Trustworthy Multimodal AI</li>
+        <li>Personalized VLA</li>
+        <li>Embodied Agents</li>
+        <li>Medical Vision</li>
+      </ul>
+    </div>
+
+    <article class="research-entry" id="radtrace">
+      <p class="kicker">Trustworthy Multimodal AI · PRAI 2026</p>
+      <h2 class="section-heading">RadTRACE</h2>
+      <p class="research-question">When a medical vision-language model fails under coordinated image and text manipulation, can we identify which evidence-processing stage actually broke instead of reporting only a final score?</p>
+      <div class="research-diagram" aria-label="RadTRACE diagnostic stages">
+        <span class="diagram-node">Clean / Text / Image / Hybrid</span>
+        <span class="diagram-arrow">→</span>
+        <span class="diagram-node node-blue">Clinical induction audit</span>
+        <span class="diagram-arrow">→</span>
+        <span class="diagram-node node-teal">Radiology evidence probe</span>
+        <span class="diagram-arrow">→</span>
+        <span class="diagram-node node-green">Safety / utility routing</span>
+      </div>
+      <div class="detail-grid">
+        <div>
+          <h3>Problem</h3>
+          <p>Safety evaluations often collapse a complicated failure into accuracy, refusal rate, or attack success. That makes it hard to tell whether the model was manipulated by language, lost visual grounding, violated a schema, or simply refused too aggressively.</p>
+        </div>
+        <div>
+          <h3>Approach</h3>
+          <p>RadTRACE tracks behavior across clean, text, image, and hybrid inputs and separates the evaluation into an induction audit, an evidence probe, and a safety-utility routing stage. It also compares prompt-only structured output with grammar-constrained decoding to distinguish formatting failures from deeper grounding problems.</p>
+        </div>
+        <div>
+          <h3>Finding</h3>
+          <p>In the documented experiments, grammar-constrained decoding substantially improved schema-valid evidence and reduced fallback behavior, while negative controls still showed that structurally valid evidence is not the same as genuine image grounding. The project therefore treats reliability as a chain of inspectable failure modes.</p>
+        </div>
+        <div>
+          <h3>My Role</h3>
+          <p>First author. I led the research framing, framework design, experiment implementation, result verification, paper writing, and camera-ready preparation described in the project record.</p>
+        </div>
+      </div>
+      <div class="text-links"><a class="icon-link" href="https://github.com/JerryshuaiwuDong/RadTrace"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 7-5 5 5 5M15 7l5 5-5 5"></path></svg> Code</a></div>
+    </article>
+
+    <article class="research-entry" id="drive-my-way">
+      <p class="kicker">Personalized VLA · Autonomous Driving</p>
+      <h2 class="section-heading">Drive My Way</h2>
+      <p class="research-question">Can a driving policy combine long-term user tendencies with an immediate natural-language request and express both through closed-loop vehicle behavior?</p>
+      <div class="research-diagram" aria-label="Drive My Way personalization components">
+        <span class="diagram-node">Structured profile</span>
+        <span class="diagram-node">Driving history</span>
+        <span class="diagram-node">User embedding</span>
+        <span class="diagram-node">Current instruction</span>
+        <span class="diagram-arrow">→</span>
+        <span class="diagram-node">Personalized VLA policy</span>
+        <span class="diagram-arrow">→</span>
+        <span class="diagram-node">Closed-loop driving</span>
+      </div>
+      <div class="detail-grid">
+        <div>
+          <h3>Problem</h3>
+          <p>Real drivers differ in speed preference, caution, comfort, and interaction style. A useful personalized system must combine these longer-term tendencies with short-term instructions rather than reducing personalization to text generation or coarse style labels.</p>
+        </div>
+        <div>
+          <h3>Research Setting</h3>
+          <p>The work uses structured user context, driving behavior, natural-language instructions, CARLA-based simulation, Bench2Drive-style closed-loop evaluation, and a personalized driving dataset to study action-level preference alignment.</p>
+        </div>
+        <div>
+          <h3>What I Learned</h3>
+          <p>The project shifted my focus from static multimodal understanding toward systems that maintain user context and make decisions over time. It also created the foundation for my current interest in memory, preference drift, and safe personalization for embodied agents.</p>
+        </div>
+        <div>
+          <h3>My Role</h3>
+          <p>I participated in the research and became familiar with the data, code structure, and closed-loop experimental environment. This page intentionally does not claim module-level ownership that has not been independently verified.</p>
+        </div>
+      </div>
+      <div class="text-links"><a class="icon-link" href="https://arxiv.org/abs/2603.25740"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 3.5h9l3 3V20H6z"></path><path d="M15 3.5V7h3M9 11h6M9 15h6"></path></svg> arXiv</a></div>
+    </article>
+
+    <article class="research-entry" id="medical-adaptation">
+      <p class="kicker">Medical Vision · Research Foundation</p>
+      <h2 class="section-heading">Medical Image Adaptation</h2>
+      <p class="research-question">How does medical image segmentation degrade when the deployment distribution differs from the source training domain?</p>
+      <div class="research-diagram" aria-label="Medical image domain adaptation research flow">
+        <span class="diagram-node">Source hospital / scanner</span>
+        <span class="diagram-arrow">→</span>
+        <span class="diagram-node">U-Net / CNN / Swin variants</span>
+        <span class="diagram-arrow">→</span>
+        <span class="diagram-node">Domain adaptation</span>
+        <span class="diagram-arrow">→</span>
+        <span class="diagram-node">Target distribution</span>
+      </div>
+      <div class="detail-grid">
+        <div>
+          <h3>Work</h3>
+          <p>I reproduced and compared medical segmentation approaches, prepared source and target splits, worked with training and alignment objectives, and debugged experiments across CNN, U-Net, and Swin-Transformer-style models.</p>
+        </div>
+        <div>
+          <h3>Lesson</h3>
+          <p>This experience made deployment distribution the object of study rather than treating source-domain benchmark performance as sufficient evidence. That perspective directly motivated my later focus on reliability and failure diagnosis.</p>
+        </div>
+        <div>
+          <h3>My Role</h3>
+          <p>I contributed to literature review, preprocessing, model training, experiment analysis, and research engineering. Dataset-specific performance numbers are omitted because the current source record does not verify them precisely enough for public presentation.</p>
+        </div>
+      </div>
+    </article>
+
+    <section class="research-entry" aria-labelledby="directions-title">
+      <p class="kicker">Ongoing Exploration</p>
+      <h2 class="section-heading" id="directions-title">Current Research Directions</h2>
+      <p>This is ongoing exploration, not a list of completed results.</p>
+      <div class="detail-grid">
+        <div>
+          <h3>Personalized Embodied Agents</h3>
+          <p>I am interested in long-term and short-term memory for user preferences, preference drift, conflict resolution, forgetting, and safety constraints that prevent an agent from blindly accommodating risky behavior.</p>
+        </div>
+        <div>
+          <h3>UAV / Embodied Personalization</h3>
+          <p>I am exploring whether user-specific memory and interaction can support meaningful UAV navigation tasks such as personalized object search, inspection priorities, or task-conditioned trade-offs among speed, viewpoint, energy, and risk.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Shuaiwu Dong · Research and systems for AI in the real world</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shuaiwu Dong works across trustworthy multimodal AI, personalized vision-language-action models, edge AI, and embodied AI.">
+  <meta property="og:title" content="Shuaiwu Dong | AI Research &amp; Engineering">
+  <meta property="og:description" content="Research in trustworthy multimodal AI, personalized VLA, edge AI, and embodied systems, with selected engineering projects.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://jerryshuaiwudong.github.io/">
+  <title>Shuaiwu Dong | AI Research &amp; Engineering</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header compact-header">
+    <p class="site-name"><a href="index.html" aria-current="page">Shuaiwu Dong</a></p>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="research.html">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="https://github.com/JerryshuaiwuDong">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="academic-layout">
+    <aside class="profile-sidebar" aria-label="Profile">
+      <img class="profile-photo profile-photo-sidebar" src="assets/profile.png" alt="Portrait of Shuaiwu Dong">
+      <h1>Shuaiwu Dong</h1>
+      <p class="profile-degree">Computer Science, Wenzhou-Kean University</p>
+      <p class="profile-minor">Minor in Mathematical Sciences</p>
+      <div class="profile-links" aria-label="Contact links">
+        <a class="icon-link" href="mailto:jerryshuaiwudong@outlook.com">
+          <svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.5 6.5h17v11h-17z"></path><path d="m4 7 8 6 8-6"></path></svg>
+          Email
+        </a>
+        <a class="icon-link" href="https://github.com/JerryshuaiwuDong">
+          <svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 7-5 5 5 5M15 7l5 5-5 5"></path></svg>
+          GitHub <span class="external-cue" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </aside>
+
+    <div class="academic-content">
+      <section class="academic-section first-section" aria-labelledby="about-title">
+        <h2 id="about-title">About Me</h2>
+        <p>I am interested in reliable AI systems that can move from understanding multimodal information to making decisions in real-world settings, where evidence, user preferences, device constraints, and safety all matter.</p>
+        <p>My research path has moved from medical image adaptation to medical vision-language model safety, personalized driving with vision-language-action models, and edge or embodied systems that must operate under practical deployment constraints.</p>
+      </section>
+
+      <section class="academic-section" aria-labelledby="interests-title">
+        <h2 id="interests-title">Research Interests</h2>
+        <p class="research-interest-line">
+          <span>Multimodal AI</span><span aria-hidden="true">·</span>
+          <span>Vision-Language-Action Models</span><span aria-hidden="true">·</span>
+          <span>Edge AI</span><span aria-hidden="true">·</span>
+          <span>Embodied AI</span>
+        </p>
+        <p class="compact-copy">I study how multimodal models can become more reliable, personalized, resource-aware, and effective when they are connected to real decisions and actions.</p>
+      </section>
+
+      <section class="academic-section" aria-labelledby="news-title">
+        <h2 id="news-title">News</h2>
+        <ul class="news-list academic-news">
+          <li><span class="news-date">2026</span><span><a href="research.html#radtrace">RadTRACE</a> was accepted to PRAI 2026.</span></li>
+          <li><span class="news-date">2025.06</span><span>Joined the University of California, Riverside as an Undergraduate Visiting Student Researcher.</span></li>
+          <li><span class="news-date">Current</span><span>Exploring personalized long-term memory and preference-aware embodied agents.</span></li>
+        </ul>
+      </section>
+
+      <section class="academic-section" aria-labelledby="research-publications-title">
+        <h2 id="research-publications-title">Research &amp; Publications</h2>
+
+        <article class="publication-row" id="radtrace-home">
+          <div class="publication-visual compact-diagram" aria-label="RadTRACE evidence-chain diagnostic flow">
+            <span class="diagram-node node-blue">Clinical induction</span>
+            <span class="diagram-arrow" aria-hidden="true">→</span>
+            <span class="diagram-node node-teal">Evidence probe</span>
+            <span class="diagram-arrow" aria-hidden="true">→</span>
+            <span class="diagram-node node-green">Safety / utility route</span>
+          </div>
+          <div class="publication-body">
+            <p class="kicker">Trustworthy Multimodal AI · First Author</p>
+            <h3>RadTRACE: Diagnosing Evidence-Chain Bottlenecks in Medical Vision-Language Models under Image-Text Hybrid Attacks</h3>
+            <p class="author-line"><strong>Shuaiwu Dong</strong>, collaborators</p>
+            <p class="venue-line">IEEE 9th International Conference on Pattern Recognition and Artificial Intelligence (PRAI), 2026 · Accepted</p>
+            <p>RadTRACE treats medical VLM safety as a diagnostic problem, separating clinical-induction auditing, evidence probing, and safety-utility routing to identify where evidence chains fail under clean, text, image, and hybrid inputs.</p>
+            <div class="text-links publication-links">
+              <a href="research.html#radtrace">Research details</a>
+              <a href="https://github.com/JerryshuaiwuDong/RadTrace">Code <span class="external-cue" aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication-row" id="drive-my-way-home">
+          <div class="publication-visual compact-diagram" aria-label="Drive My Way personalization and closed-loop action flow">
+            <span class="diagram-node node-blue">User context + history</span>
+            <span class="diagram-node node-teal">Language instruction</span>
+            <span class="diagram-arrow" aria-hidden="true">→</span>
+            <span class="diagram-node node-green">VLA policy</span>
+            <span class="diagram-arrow" aria-hidden="true">→</span>
+            <span class="diagram-node">Closed-loop action</span>
+          </div>
+          <div class="publication-body">
+            <p class="kicker">Personalized VLA · Autonomous Driving</p>
+            <h3>Drive My Way: Preference Alignment of Vision-Language-Action Model for Personalized Driving</h3>
+            <p class="author-line">Collaborative research project; see the paper for the authoritative author order.</p>
+            <p>This work studies how longer-term user context and immediate language instructions can influence a vision-language-action policy so personalization changes closed-loop driving behavior rather than only generated descriptions.</p>
+            <div class="text-links publication-links">
+              <a href="research.html#drive-my-way">Research details</a>
+              <a href="https://arxiv.org/abs/2603.25740">arXiv <span class="external-cue" aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="research-history-row">
+          <p class="kicker">Research Foundation</p>
+          <h3><a href="research.html#medical-adaptation">Medical Image Adaptation</a></h3>
+          <p>I began research by studying medical image segmentation under domain shift, reproducing and comparing CNN, U-Net, and Swin-Transformer-based approaches while learning how deployment distributions shape model performance.</p>
+        </article>
+      </section>
+      <section class="academic-section" aria-labelledby="projects-title">
+        <h2 id="projects-title">Selected Projects</h2>
+        <div class="project-summary-list">
+          <article class="project-summary">
+            <div>
+              <p class="kicker">Edge AI · Raspberry Pi</p>
+              <h3>Edge Task Hub</h3>
+            </div>
+            <div>
+              <p>A resource-aware local AI automation hub that routes tasks among deterministic rules, local Qwen models, and classical ML according to privacy, quality, latency, and device constraints.</p>
+              <div class="text-links">
+                <a href="projects.html#edge-task-hub">Case study</a>
+                <a href="https://github.com/JerryshuaiwuDong/edge-task-hub">GitHub <span class="external-cue" aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-summary">
+            <div>
+              <p class="kicker">Technical Partner · 0→1 Execution</p>
+              <h3>Spartina Technology</h3>
+            </div>
+            <div>
+              <p>I work across AI infrastructure, B2B solution design, automation, product presentation, and delivery, translating models and compute into workflows that teams and clients can inspect and use.</p>
+              <div class="text-links">
+                <a href="projects.html#spartina">Case study</a>
+                <a href="https://spartina.tech">Website <span class="external-cue" aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="academic-section" aria-labelledby="education-experience-title">
+        <h2 id="education-experience-title">Education &amp; Experience</h2>
+        <div class="academic-list">
+          <div class="academic-list-row">
+            <p><strong>Wenzhou-Kean University</strong></p>
+            <p>B.S. Computer Science · Minor in Mathematical Sciences</p>
+          </div>
+          <div class="academic-list-row">
+            <p><strong>University of California, Riverside</strong></p>
+            <p>Undergraduate Visiting Student Researcher</p>
+          </div>
+          <div class="academic-list-row">
+            <p><strong>Gupta AI Lab · Wenzhou-Kean University</strong></p>
+            <p>Research Assistant</p>
+          </div>
+          <div class="academic-list-row">
+            <p><strong>Spartina Technology</strong></p>
+            <p>Technical Partner</p>
+          </div>
+          <div class="academic-list-row optional-row">
+            <p><strong>Wenzhou-Kean University</strong></p>
+            <p>Mathematics Peer Tutor</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="academic-section" aria-labelledby="honors-title">
+        <h2 id="honors-title">Honors &amp; Awards</h2>
+        <ul class="honor-list academic-honors">
+          <li><span class="honor-year">2026</span><span>Zhejiang Provincial Outstanding Graduate</span></li>
+          <li><span class="honor-year">2024, 2025</span><span>Zhejiang Provincial Government Scholarship</span></li>
+          <li><span class="honor-year">2024</span><span>University-level Research Innovation Scholarship</span></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer academic-footer">
+    <p>© 2026 Shuaiwu Dong · Built with plain HTML &amp; CSS · Hosted on GitHub Pages</p>
+  </footer>
+</body>
+</html>
