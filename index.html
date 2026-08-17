@@ -76,11 +76,17 @@
         <h2 id="publications-title">📝 Selected Publications <span class="reference-section-links">| <a href="research.html">See Research Details &gt;</a></span></h2>
 
         <article class="reference-publication">
-          <div class="reference-publication-visual" aria-label="RadTRACE evidence-chain diagnostic flow">
+          <div class="reference-publication-visual reference-architecture-card" role="img" aria-label="RadTRACE architecture: clean, text, image, and hybrid inputs flow through clinical induction audit, radiology evidence probe, and safety utility routing">
             <strong>RadTRACE</strong>
-            <span>clinical induction</span>
-            <span>→ evidence probe</span>
-            <span>→ safety / utility</span>
+            <div class="reference-architecture-flow">
+              <span class="reference-architecture-node">Clean / Text / Image / Hybrid</span>
+              <span class="reference-architecture-arrow" aria-hidden="true">↓</span>
+              <span class="reference-architecture-node node-blue">Clinical induction audit</span>
+              <span class="reference-architecture-arrow" aria-hidden="true">↓</span>
+              <span class="reference-architecture-node node-teal">Radiology evidence probe</span>
+              <span class="reference-architecture-arrow" aria-hidden="true">↓</span>
+              <span class="reference-architecture-node node-green">Safety / utility routing</span>
+            </div>
           </div>
           <div>
             <p class="reference-kicker">Trustworthy Multimodal AI · First Author</p>
@@ -93,11 +99,20 @@
         </article>
 
         <article class="reference-publication">
-          <div class="reference-publication-visual" aria-label="Drive My Way personalization flow">
+          <div class="reference-publication-visual reference-architecture-card" role="img" aria-label="Drive My Way architecture: structured profile, driving history, user embedding, and current instruction flow into a personalized VLA policy and closed-loop driving">
             <strong>Drive My Way</strong>
-            <span>user context + history</span>
-            <span>→ personalized VLA</span>
-            <span>→ closed-loop action</span>
+            <div class="reference-architecture-flow">
+              <div class="reference-architecture-inputs">
+                <span class="reference-architecture-node">Structured profile</span>
+                <span class="reference-architecture-node">Driving history</span>
+                <span class="reference-architecture-node">User embedding</span>
+                <span class="reference-architecture-node">Current instruction</span>
+              </div>
+              <span class="reference-architecture-arrow" aria-hidden="true">↓</span>
+              <span class="reference-architecture-node node-blue">Personalized VLA policy</span>
+              <span class="reference-architecture-arrow" aria-hidden="true">↓</span>
+              <span class="reference-architecture-node node-green">Closed-loop driving</span>
+            </div>
           </div>
           <div>
             <p class="reference-kicker">Personalized VLA · Autonomous Driving</p>
