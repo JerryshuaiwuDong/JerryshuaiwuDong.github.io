@@ -224,98 +224,8 @@ body.reference-page ol {
   border-bottom: 1px solid #f2f3f3;
 }
 
-.reference-publication-visual {
-  display: flex;
-  min-height: 112px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0.8rem;
-  border: 1px solid #f2f3f3;
-  background: #fafafa;
-  color: #777a7d;
-  text-align: center;
-  font-size: 0.76rem;
-  line-height: 1.35;
-}
-
-.reference-publication-visual strong {
-  margin-bottom: 0.45rem;
-  color: #494e52;
-  font-size: 1.05em;
-}
-
-.reference-publication-visual span {
-  display: block;
-  margin: 0.1rem 0;
-}
-
-.reference-architecture-card {
-  align-items: stretch;
-  min-height: 178px;
-  padding: 0.65rem;
-  background: #fbfcfd;
-}
-
-.reference-architecture-card > strong {
-  align-self: center;
-  margin-bottom: 0.5rem;
-}
-
-.reference-architecture-flow {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 0.22rem;
-}
-
-.reference-architecture-node {
-  display: flex !important;
-  min-height: 1.9em;
-  align-items: center;
-  justify-content: center;
-  margin: 0 !important;
-  padding: 0.28rem 0.25rem;
-  border: 1px solid #d8e0e7;
-  background: #fff;
-  color: #494e52;
-  font-size: 0.62rem;
-  line-height: 1.15;
-}
-
-.reference-architecture-node.node-blue {
-  border-color: #b7cbe5;
-  background: #f1f6fc;
-}
-
-.reference-architecture-node.node-teal {
-  border-color: #b9d9d9;
-  background: #f0f9f8;
-}
-
-.reference-architecture-node.node-green {
-  border-color: #c1ddc8;
-  background: #f1f9f3;
-}
-
-.reference-architecture-arrow {
-  display: block !important;
-  margin: 0 !important;
-  color: #8b959e;
-  font-size: 0.8rem;
-  line-height: 0.9;
-  text-align: center;
-}
-
-.reference-architecture-inputs {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.2rem;
-}
-
-.reference-architecture-inputs .reference-architecture-node {
-  min-height: 2.7em;
+.reference-publication-no-visual {
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .reference-publication h3 {
@@ -393,9 +303,6 @@ body.reference-page ol {
     gap: 0.4rem;
   }
 
-  .reference-publication-visual {
-    min-height: 92px;
-  }
 }
 
 * { box-sizing: border-box; }
