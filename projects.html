@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Engineering and product case studies by Shuaiwu Dong, including Spartina Technology and Edge Task Hub.">
+  <meta name="description" content="Engineering and product case studies by Shuaiwu Dong, including Spartina Technology.">
   <meta property="og:title" content="Projects | Shuaiwu Dong">
   <meta property="og:description" content="AI infrastructure, B2B systems, automation, and edge AI built beyond the paper.">
   <meta property="og:type" content="website">
@@ -71,47 +71,6 @@
       </div>
     </article>
 
-    <article class="project-entry" id="edge-task-hub">
-      <p class="kicker">Edge AI · Raspberry Pi</p>
-      <h2 class="section-heading">Edge Task Hub</h2>
-      <p class="research-question">Instead of sending every task to the largest available model, can a small physical device route work among rules, local language models, and classical ML according to privacy, latency, quality, and resource constraints?</p>
-      <div class="topic-chips" aria-label="Edge Task Hub technical areas">
-        <span class="tech-chip">Edge AI</span>
-        <span class="tech-chip">Local LLM</span>
-        <span class="tech-chip">Raspberry Pi</span>
-        <span class="tech-chip">Resource-Aware Routing</span>
-      </div>
-      <div class="system-diagram" aria-label="Edge Task Hub resource-aware routing architecture">
-        <span class="diagram-node">Reminder / News / Private document / Health metrics</span>
-        <span class="diagram-arrow">→</span>
-        <span class="diagram-node">resource-aware router</span>
-        <span class="diagram-arrow">→</span>
-        <span class="diagram-node">Rules</span>
-        <span class="diagram-node">Local Qwen</span>
-        <span class="diagram-node">Isolation Forest</span>
-        <span class="diagram-arrow">→</span>
-        <span class="diagram-node">Raspberry Pi + Feishu</span>
-      </div>
-      <div class="detail-grid">
-        <div>
-          <h3>System</h3>
-          <p>The hub uses FastAPI, Jinja2, scheduled jobs, SQLite-backed execution records, Feishu for interaction, Ollama for local Qwen inference, and an Isolation Forest for local device-health anomaly scoring.</p>
-        </div>
-        <div>
-          <h3>Routing</h3>
-          <p>Deterministic reminder parsing is attempted first. Local LLM inference is used only when rules cannot resolve an apparently valid request, and the structured result is checked again before execution. Private-document text stays on the device rather than being sent to a cloud model.</p>
-        </div>
-        <div>
-          <h3>Real-device validation</h3>
-          <p>Documented Raspberry Pi runs showed a quality/latency trade-off between local Qwen model sizes. The project also collected 4,345 device-metric samples and marked 82 anomaly events in its initial monitoring window; those anomaly counts are operational observations, not claims of classifier accuracy.</p>
-        </div>
-        <div>
-          <h3>My Role</h3>
-          <p>I co-developed the system, participated in Raspberry Pi deployment validation, organized the experimental results, and served as the project-report first author and public repository maintainer.</p>
-        </div>
-      </div>
-      <div class="text-links"><a class="icon-link" href="https://github.com/JerryshuaiwuDong/edge-task-hub"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 7-5 5 5 5M15 7l5 5-5 5"></path></svg> Code</a></div>
-    </article>
   </main>
 
   <footer class="site-footer">
