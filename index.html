@@ -3,111 +3,220 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Shuaiwu Dong's academic homepage: trustworthy multimodal AI, personalized VLA systems, score-based graph generation, and embodied intelligence.">
+  <meta name="description" content="Shuaiwu Dong's academic homepage: embodied vision-language-action agents, personalized and UAV navigation, trustworthy multimodal AI, and score-based graph generation.">
   <meta property="og:title" content="Shuaiwu Dong - Homepage">
-  <meta property="og:description" content="Academic homepage of Shuaiwu Dong, a computer science graduate and AI researcher-builder.">
+  <meta property="og:description" content="Academic homepage of Shuaiwu Dong, a Research Assistant at IFIRI, Wenzhou-Kean University, working on embodied vision-language-action agents and trustworthy multimodal AI.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jerryshuaiwudong.github.io/">
+  <meta property="og:image" content="https://jerryshuaiwudong.github.io/assets/profile.jpg">
+  <meta name="color-scheme" content="light dark">
   <link rel="canonical" href="https://jerryshuaiwudong.github.io/">
-  <link rel="icon" href="assets/profile.png" type="image/png">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="stylesheet" href="style.css">
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.add('js');
+      try {
+        var theme = localStorage.getItem('theme');
+        if (theme === 'light' || theme === 'dark') root.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <script src="script.js" defer></script>
   <title>Shuaiwu Dong - Homepage</title>
 </head>
 <body class="reference-page">
   <header class="reference-masthead">
+    <div class="reference-progress" aria-hidden="true"></div>
     <div class="reference-masthead-inner">
       <nav aria-label="Primary navigation">
         <ul class="reference-nav">
-          <li><a href="#about-me">Homepage</a></li>
-          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#research">Research</a></li>
           <li><a href="#news">News</a></li>
           <li><a href="#publications">Publications</a></li>
+          <li><a href="#ongoing">Ongoing</a></li>
           <li><a href="#project">Project</a></li>
-          <li><a href="#educations">Educations</a></li>
-          <li><a href="#honors-and-awards">Honors and Awards</a></li>
-          <li><a href="#academic-services">Academic Services</a></li>
-          <li><a href="#miscellaneous">Miscellaneous</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#honors-and-awards">Honors</a></li>
         </ul>
       </nav>
+      <button class="reference-theme-toggle" type="button" aria-label="Switch to dark mode">☾</button>
     </div>
   </header>
 
   <main id="main" class="reference-main">
     <aside class="reference-sidebar" aria-label="Profile">
       <div class="reference-author-avatar">
-        <img src="assets/profile.png" alt="Portrait of Shuaiwu Dong">
+        <img src="assets/profile.webp" width="400" height="400" alt="Portrait of Shuaiwu Dong">
       </div>
-      <h1>Shuaiwu Dong 董帅吾</h1>
-      <p class="reference-author-role">Computer Science Graduate from Wenzhou-Kean University</p>
-      <p class="reference-author-focus">Trustworthy AI and Autonomous Systems</p>
+      <h1>Shuaiwu Dong <span class="reference-name-zh">董帅吾</span></h1>
+      <p class="reference-author-role">Research Assistant, IFIRI, Wenzhou-Kean University</p>
+      <p class="reference-author-focus">Embodied VLA Agents · Trustworthy Multimodal AI</p>
 
       <ul class="reference-contact-list">
         <li><span class="reference-icon" aria-hidden="true">⌖</span> Wenzhou, China</li>
         <li><a href="mailto:jerryshuaiwudong@outlook.com"><span class="reference-icon" aria-hidden="true">✉</span> Email</a></li>
         <li><a href="https://github.com/JerryshuaiwuDong"><span class="reference-icon" aria-hidden="true">⌘</span> Github</a></li>
       </ul>
-
     </aside>
 
     <div class="reference-content">
-      <article id="about-me" class="reference-section reference-about">
-        <p>👋 I am a Computer Science graduate of Wenzhou-Kean University and a Research Assistant at the International Frontier Interdisciplinary Research Institute (IFIRI), Wenzhou-Kean University. Beyond research, I am a Technical Partner at <a href="https://spartina.tech">Spartina Technology (米草科技)</a>, where I work on translating AI capabilities into real-world B2B products and client-facing solutions, from multimodal and vision systems to AI automation and overseas business applications.</p>
+      <article id="about-me" class="reference-section reference-about" data-reveal>
+        <p>👋 I am a Research Assistant at the International Frontier Interdisciplinary Research Institute (IFIRI), Wenzhou-Kean University, where I also received my B.S. in Computer Science.</p>
+        <p>I am interested in building AI systems that do more than understand the world—they should be able to <strong>reason about it and act within it</strong>. My research focuses on <strong>multimodal embodied intelligence</strong>, especially vision-language-action models for driving and UAV navigation, and the reliability challenges that arise when deploying them in real-world environments. Ultimately, I hope to build embodied agents that can adapt to individual people and become useful collaborators in everyday life.</p>
         <p>My research has been guided by <a href="https://jiachenli94.github.io/">Prof. Jiachen Li</a> at the <a href="https://tasl.ucr.edu/">Trustworthy Autonomous Systems Laboratory (TASL)</a> at the University of California, Riverside, and by <a href="https://csmt.wku.edu.cn/en/node/2044">Prof. Zhiqiang Gao</a> and <a href="https://www.zhiwuxie.com/">Dr. Zhiwu Xie</a> at Wenzhou-Kean University.</p>
-        <p>I am interested in building AI systems that do more than understand the world—they should be able to <strong>reason about it and act within it</strong>. My research focuses on <strong>multimodal embodied intelligence</strong>, especially vision-language-action models and the reliability challenges that arise when deploying them in real-world environments. Ultimately, I hope to build embodied agents that can adapt to individual people and become useful collaborators in everyday life.</p>
+        <p>Beyond research, I am a Technical Partner at <a href="https://spartina.tech">Spartina Technology (米草科技)</a>, where I work on translating AI capabilities into real-world B2B products and client-facing solutions, from multimodal and vision systems to AI automation and overseas business applications.</p>
       </article>
 
+      <section id="research" class="reference-section" aria-labelledby="research-title">
+        <h2 id="research-title" data-reveal>🧭 Research</h2>
+        <div class="reference-themes">
+          <article class="reference-theme reference-theme-focus" data-reveal>
+            <svg class="reference-theme-icon" viewBox="0 0 48 48" aria-hidden="true">
+              <circle cx="11" cy="11" r="6" pathLength="1"/>
+              <circle cx="37" cy="11" r="6" pathLength="1"/>
+              <circle cx="11" cy="37" r="6" pathLength="1"/>
+              <circle cx="37" cy="37" r="6" pathLength="1"/>
+              <path d="M15 15 L33 33 M33 15 L15 33" pathLength="1"/>
+              <rect x="19" y="19" width="10" height="10" rx="2" pathLength="1"/>
+            </svg>
+            <div>
+              <p class="reference-theme-label"><span class="reference-pulse" aria-hidden="true"></span>Current Focus</p>
+              <h3>Embodied Vision-Language-Action Agents</h3>
+              <p>Building VLA agents that act reliably in closed loop and adapt to the people they serve—from personalized driving with long-term user preferences to instruction-following UAV navigation and frontier models as embodied policies.</p>
+              <ul class="reference-chips">
+                <li>Vision-Language-Action</li>
+                <li>Personalization</li>
+                <li>UAV Navigation</li>
+                <li>Closed-loop Reliability</li>
+              </ul>
+              <p class="reference-theme-links">
+                <a href="#pub-cvpr2026" data-jump>→ Drive My Way (CVPR 2026)</a>
+                <a href="#ongoing-uav-vla" data-jump>→ UAV VLA navigation</a>
+                <a href="#ongoing-astra" data-jump>→ Frontier models as policies</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="reference-theme" data-reveal>
+            <svg class="reference-theme-icon" viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M24 5 L40 11 V23 C40 33 33 40 24 43 C15 40 8 33 8 23 V11 Z" pathLength="1"/>
+              <path d="M16 24 L22 30 L33 18" pathLength="1"/>
+            </svg>
+            <div>
+              <h3>Trustworthy Multimodal Reasoning</h3>
+              <p>Diagnosing where the evidence chains of vision-language models break under attack, so failures can be traced rather than only measured.</p>
+              <ul class="reference-chips">
+                <li>VLM Safety</li>
+                <li>Medical VQA</li>
+              </ul>
+              <p class="reference-theme-links"><a href="#pub-prai2026" data-jump>→ RadTRACE (PRAI 2026)</a></p>
+            </div>
+          </article>
+
+          <article class="reference-theme" data-reveal>
+            <svg class="reference-theme-icon" viewBox="0 0 48 48" aria-hidden="true">
+              <circle cx="10" cy="34" r="5" pathLength="1"/>
+              <circle cx="24" cy="12" r="5" pathLength="1"/>
+              <circle cx="38" cy="32" r="5" pathLength="1"/>
+              <path d="M13 30 L21 16 M28 15 L35 28 M15 34 L33 32" pathLength="1"/>
+            </svg>
+            <div>
+              <h3>Diagnostic Generative Modeling</h3>
+              <p>Decomposing the error of score-based graph generation into interpretable gaps that point to which pipeline component to fix.</p>
+              <ul class="reference-chips">
+                <li>Diffusion &amp; SDEs</li>
+                <li>Graph Generation</li>
+              </ul>
+              <p class="reference-theme-links"><a href="#pub-acml2026" data-jump>→ CSEA (ACML 2026)</a></p>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section id="news" class="reference-section" aria-labelledby="news-title">
-        <h2 id="news-title">🔥 News</h2>
-        <ul class="reference-news-list">
-          <li><em>2026.09</em>: <span>Our paper on error decomposition for score-based graph generation has been accepted to ACML 2026.</span></li>
-          <li><em>2026.08</em>: <span>RadTRACE has been accepted to PRAI 2026.</span></li>
-          <li><em>2026.08</em>: <span>Joined the International Frontier Interdisciplinary Research Institute (IFIRI), Wenzhou-Kean University, as a Research Assistant.</span></li>
-          <li><em>2026.06</em>: <span>Graduated from Wenzhou-Kean University with a B.S. in Computer Science, recognized as a Zhejiang Provincial Outstanding Graduate.</span></li>
-          <li><em>2026</em>: <span>Exploring personalized long-term memory and preference-aware embodied agents.</span></li>
-          <li><em>2026.02</em>: <span>Drive My Way has been accepted to CVPR 2026.</span></li>
-          <li><em>2025.06</em>: <span>Joined the University of California, Riverside as an Undergraduate Visiting Student Researcher.</span></li>
+        <h2 id="news-title" data-reveal>🔥 News</h2>
+        <ul class="reference-news-list" data-reveal>
+          <li class="reference-news-live"><em>Ongoing</em>: Working on UAV vision-language-action navigation and frontier models as embodied policies. <a href="#ongoing" data-jump>→ Ongoing Research</a></li>
+          <li><em>2026.09</em>: Our paper on error decomposition for score-based graph generation has been accepted to <strong>ACML 2026</strong>. <span class="reference-new">New</span></li>
+          <li><em>2026.08</em>: RadTRACE has been accepted to <strong>PRAI 2026</strong>.</li>
+          <li><em>2026.08</em>: Joined the International Frontier Interdisciplinary Research Institute (IFIRI), Wenzhou-Kean University, as a Research Assistant.</li>
+          <li><em>2026.06</em>: Graduated from Wenzhou-Kean University with a B.S. in Computer Science, recognized as a Zhejiang Provincial Outstanding Graduate.</li>
+          <li><em>2026.02</em>: Drive My Way has been accepted to <strong>CVPR 2026</strong>.</li>
+          <li><em>2025.06</em>: Joined the University of California, Riverside as an Undergraduate Visiting Student Researcher.</li>
         </ul>
       </section>
 
       <section id="publications" class="reference-section" aria-labelledby="publications-title">
-        <h2 id="publications-title">📝 Selected Publications</h2>
+        <h2 id="publications-title" data-reveal>📝 Selected Publications</h2>
+        <p class="reference-kicker" data-reveal><sup>*</sup>Equal contribution · <sup>†</sup>Corresponding author</p>
 
-        <article class="reference-publication reference-publication-no-visual">
+        <article id="pub-acml2026" class="reference-publication" data-reveal>
+          <a class="reference-thumb" href="assets/papers/acml2026-csea.webp">
+            <span class="reference-badge reference-badge-acml">ACML 2026</span>
+            <img src="assets/papers/acml2026-csea.webp" width="800" height="373" loading="lazy" alt="Pipeline diagram comparing reference laws and the actual output pipeline of score-based graph generation">
+          </a>
           <div>
             <p class="reference-kicker">Score-based Graph Generation · Co-First Author</p>
             <h3>Error Decomposition for Score-based Graph Generation via Coupled Stochastic Differential Equations</h3>
-            <p><strong>Shuaiwu Dong</strong><sup>†</sup>, Zhentong Ye<sup>†</sup>, Yingda Yu, Yuehan Shi, Jiaqi Xuan, Zhou Sijia, Gaurav Gupta, Guanchao Tong</p>
-            <p>18th Asian Conference on Machine Learning (ACML), 2026 · Accepted · <sup>†</sup>Equal contribution</p>
-            <p>CSEA treats score-based graph generation as a diagnostic problem, separating terminal-prior, score-estimation, discretization, output non-invariance, distribution-shift, and validity-repair gaps, and pairs it with AdaGDSS, a budget-capped adaptive sampler for coupled node-edge SDEs.</p>
+            <p><strong>Shuaiwu Dong</strong><sup>*</sup>, Zhentong Ye<sup>*</sup>, Yingda Yu, Yuehan Shi, Jiaqi Xuan, Sijia Zhou, Guanchao Tong, Gaurav Gupta<sup>†</sup></p>
+            <p class="reference-venue"><strong>ACML 2026</strong> · 18th Asian Conference on Machine Learning, PMLR 353</p>
+            <p class="reference-summary">CSEA treats score-based graph generation as a diagnostic problem, separating terminal-prior, score-estimation, discretization, output non-invariance, distribution-shift, and validity-repair gaps, and pairs it with AdaGDSS, a budget-capped adaptive sampler for coupled node-edge SDEs.</p>
           </div>
         </article>
 
-        <article class="reference-publication reference-publication-no-visual">
+        <article id="pub-prai2026" class="reference-publication" data-reveal>
+          <a class="reference-thumb" href="assets/papers/prai2026-radtrace.webp">
+            <span class="reference-badge reference-badge-prai">PRAI 2026</span>
+            <img src="assets/papers/prai2026-radtrace.webp" width="800" height="461" loading="lazy" alt="RadTRACE three-stage pipeline: risk and bias detection, image-grounded evidence self-check, and clinical safety correction or refusal">
+          </a>
           <div>
             <p class="reference-kicker">Trustworthy Multimodal AI · First Author</p>
             <h3>RadTRACE: Diagnosing Evidence-Chain Bottlenecks in Medical Vision-Language Models under Image-Text Hybrid Attacks</h3>
-            <p><strong>Shuaiwu Dong</strong>, Zhiqiang Gao<sup>*</sup>, Kuan Huang, Yue Zhao, Belal Abuhaija, Meng Xu</p>
-            <p>IEEE 9th International Conference on Pattern Recognition and Artificial Intelligence (PRAI), 2026 · Accepted</p>
-            <p>RadTRACE treats medical VLM safety as a diagnostic problem, separating clinical-induction auditing, evidence probing, and safety-utility routing to identify where evidence chains fail under clean, text, image, and hybrid inputs.</p>
+            <p><strong>Shuaiwu Dong</strong>, Zhiqiang Gao<sup>†</sup>, Kuan Huang, Yue Zhao, Belal Abuhaija, Meng Xu</p>
+            <p class="reference-venue"><strong>PRAI 2026</strong> · IEEE 9th International Conference on Pattern Recognition and Artificial Intelligence</p>
+            <p class="reference-summary">RadTRACE treats medical VLM safety as a diagnostic problem, separating clinical-induction auditing, evidence probing, and safety-utility routing to identify where evidence chains fail under clean, text, image, and hybrid inputs.</p>
             <p class="reference-links"><a href="https://github.com/JerryshuaiwuDong/RadTrace">Code</a></p>
           </div>
         </article>
 
-        <article class="reference-publication reference-publication-no-visual">
+        <article id="pub-cvpr2026" class="reference-publication" data-reveal>
+          <a class="reference-thumb" href="assets/papers/cvpr2026-drive-my-way.webp">
+            <span class="reference-badge reference-badge-cvpr">CVPR 2026</span>
+            <img src="assets/papers/cvpr2026-drive-my-way.webp" width="800" height="567" loading="lazy" alt="Drive My Way produces different driving actions for two drivers with different profiles and instructions">
+          </a>
           <div>
             <p class="reference-kicker">Personalized VLA · Autonomous Driving</p>
             <h3>Drive My Way: Preference Alignment of Vision-Language-Action Model for Personalized Driving</h3>
-            <p>Zehao Wang, Huaide Jiang, <strong>Shuaiwu Dong</strong>, Yuping Wang, Hang Qiu, Jiachen Li</p>
-            <p>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026</p>
-            <p>This work studies how longer-term user context and immediate language instructions can influence a vision-language-action policy so personalization changes closed-loop driving behavior rather than only generated descriptions.</p>
+            <p>Zehao Wang, Huaide Jiang, <strong>Shuaiwu Dong</strong>, Yuping Wang, Hang Qiu, Jiachen Li<sup>†</sup></p>
+            <p class="reference-venue"><strong>CVPR 2026</strong> · IEEE/CVF Conference on Computer Vision and Pattern Recognition</p>
+            <p class="reference-summary">This work studies how longer-term user context and immediate language instructions can influence a vision-language-action policy so personalization changes closed-loop driving behavior rather than only generated descriptions.</p>
             <p class="reference-links"><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Wang_Drive_My_Way_Preference_Alignment_of_Vision-Language-Action_Model_for_Personalized_CVPR_2026_paper.html">Paper</a> | <a href="https://dmw-cvpr.github.io/">Project Website</a></p>
           </div>
         </article>
+      </section>
 
+      <section id="ongoing" class="reference-section" aria-labelledby="ongoing-title">
+        <h2 id="ongoing-title" data-reveal>🔬 Ongoing Research</h2>
+
+        <article id="ongoing-uav-vla" class="reference-ongoing" data-reveal>
+          <h3>UAV Vision-Language-Action Navigation</h3>
+          <p>Building on AeroDPO / AeroVLA, I study why UAV navigation VLAs fail in closed loop—flying to the wrong building, losing the target, skipping instruction sub-goals, or colliding near the goal. After reproducing the official checkpoints in TravelUAV simulation and analyzing failure modes, I am developing a training-free, test-time correction framework that keeps the base policy frozen and intervenes only when needed, guided by instruction semantics, altitude strategy, and task memory.</p>
+          <p class="reference-status"><span class="reference-status-pill">Ongoing</span> Simulation-based; failure analysis done, method and multi-landmark instruction split in progress.</p>
+        </article>
+
+        <article id="ongoing-astra" class="reference-ongoing" data-reveal>
+          <h3>Frontier Models as Embodied Policies — “ASTRA as Policy” for Drones</h3>
+          <p>Recent robotics work uses a general frontier model (ASTRA) directly as the robot policy. I am asking whether this transfers to aerial navigation and, more importantly, <em>which step of the pipeline</em> the large model actually contributes to—by comparing it against cheaper LLMs and traditional planners on the same benchmark, and by testing a hybrid setup where a small model executes and the large model is called only for high-level re-planning when the drone deviates from the goal.</p>
+          <p class="reference-status"><span class="reference-status-pill reference-status-early">Early exploration</span> Early stage, simulation only.</p>
+        </article>
       </section>
 
       <section id="project" class="reference-section" aria-labelledby="project-title">
-        <h2 id="project-title">🛠 Project</h2>
-        <article class="reference-project">
+        <h2 id="project-title" data-reveal>🛠 Project</h2>
+        <article class="reference-project" data-reveal>
           <div>
             <p class="reference-kicker">Technical Partner · 0→1 Execution</p>
             <h3>Spartina Technology</h3>
@@ -119,33 +228,34 @@
         </article>
       </section>
 
-      <section id="educations" class="reference-section" aria-labelledby="educations-title">
-        <h2 id="educations-title">📖 Educations</h2>
-        <ul class="reference-standard-list">
-          <li><em>2026.08 – Present</em>, Research Assistant, International Frontier Interdisciplinary Research Institute, Wenzhou-Kean University</li>
-          <li><em>2026.06</em>, B.S. Computer Science, Wenzhou-Kean University, China · Zhejiang Provincial Outstanding Graduate</li>
+      <section id="experience" class="reference-section" aria-labelledby="experience-title">
+        <h2 id="experience-title" data-reveal>💼 Experience</h2>
+        <ul class="reference-standard-list" data-reveal>
+          <li><em>2026.08 – Present</em>, Research Assistant, International Frontier Interdisciplinary Research Institute (IFIRI), Wenzhou-Kean University</li>
           <li><em>2025.06</em>, Undergraduate Visiting Student Researcher, <a href="https://tasl.ucr.edu/">Trustworthy Autonomous Systems Laboratory (TASL)</a>, University of California, Riverside, U.S.</li>
         </ul>
       </section>
 
-      <section id="honors-and-awards" class="reference-section" aria-labelledby="honors-title">
-        <h2 id="honors-title">🎖 Honors and Awards</h2>
-        <ul class="reference-standard-list">
-          <li><em>2026</em> Zhejiang Provincial Outstanding Graduate</li>
-          <li><em>2023, 2025</em> Wenzhou-Kean University Dean's Scholarship — Second Prize</li>
-          <li><em>2024</em> Wenzhou-Kean University Dean's Scholarship — First Prize</li>
-          <li><em>2024, 2025</em> Zhejiang Provincial Government Scholarship</li>
+      <section id="education" class="reference-section" aria-labelledby="education-title">
+        <h2 id="education-title" data-reveal>📖 Education</h2>
+        <ul class="reference-standard-list" data-reveal>
+          <li><em>2026.06</em>, B.S. Computer Science, Wenzhou-Kean University, China · Zhejiang Provincial Outstanding Graduate</li>
         </ul>
       </section>
 
-      <section id="academic-services" class="reference-section" aria-labelledby="services-title">
-        <h2 id="services-title">📚 Academic Services</h2>
-        <p>At this stage, I focus on research, technical project development, and building reproducible AI systems. Formal reviewing and workshop-service information will be added here when applicable.</p>
+      <section id="honors-and-awards" class="reference-section" aria-labelledby="honors-title">
+        <h2 id="honors-title" data-reveal>🎖 Honors and Awards</h2>
+        <ul class="reference-standard-list" data-reveal>
+          <li><em>2026</em> Zhejiang Provincial Outstanding Graduate</li>
+          <li><em>2024, 2025</em> Zhejiang Provincial Government Scholarship</li>
+          <li><em>2024</em> Wenzhou-Kean University Dean's Scholarship — First Prize</li>
+          <li><em>2023, 2025</em> Wenzhou-Kean University Dean's Scholarship — Second Prize</li>
+        </ul>
       </section>
 
       <section id="miscellaneous" class="reference-section" aria-labelledby="miscellaneous-title">
-        <h2 id="miscellaneous-title">🏓 Miscellaneous</h2>
-        <ul class="reference-standard-list">
+        <h2 id="miscellaneous-title" data-reveal>🏓 Miscellaneous</h2>
+        <ul class="reference-standard-list" data-reveal>
           <li>I enjoy building small AI systems on edge devices and turning research ideas into working prototypes.</li>
           <li>I am interested in the bridge between trustworthy research, embodied intelligence, and practical deployment.</li>
         </ul>
@@ -154,6 +264,12 @@
   </main>
 
   <footer class="reference-footer">
+    <p>Last updated: October 2026</p>
   </footer>
+
+  <dialog class="reference-lightbox" aria-label="Figure preview">
+    <button class="reference-lightbox-close" type="button" aria-label="Close">×</button>
+    <img src="" alt="">
+  </dialog>
 </body>
 </html>
