@@ -46,29 +46,6 @@
   --flash: rgba(122, 167, 255, 0.14);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0f1419;
-    --surface: #151b23;
-    --surface-soft: #151b23;
-    --text: #c3cad3;
-    --heading: #e6edf3;
-    --muted: #8b949e;
-    --nav: #8b949e;
-    --link: #7aa7ff;
-    --link-hover: #e6edf3;
-    --line: #1f262e;
-    --line-strong: #2b333d;
-    --accent: #7aa7ff;
-    --accent-2: #3cc8c4;
-    --accent-soft: #17233a;
-    --chip-bg: #1a2638;
-    --chip-text: #a9c4ff;
-    --shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
-    --flash: rgba(122, 167, 255, 0.14);
-  }
-}
-
 * { box-sizing: border-box; }
 
 html { scroll-behavior: smooth; }

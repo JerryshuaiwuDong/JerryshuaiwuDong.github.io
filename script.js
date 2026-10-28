@@ -65,12 +65,11 @@
   window.addEventListener('resize', onScroll);
   onScroll();
 
-  // Theme toggle: an explicit choice is stored, otherwise follow the OS.
+  // Theme toggle: light by default, an explicit choice is stored.
   var toggle = document.querySelector('.reference-theme-toggle');
-  var systemDark = window.matchMedia('(prefers-color-scheme: dark)');
 
   function currentTheme() {
-    return root.getAttribute('data-theme') || (systemDark.matches ? 'dark' : 'light');
+    return root.getAttribute('data-theme') || 'light';
   }
 
   function syncToggle() {
@@ -86,7 +85,6 @@
     syncToggle();
   });
 
-  if (systemDark.addEventListener) systemDark.addEventListener('change', syncToggle);
   syncToggle();
 
   // Jump links scroll to their target and briefly highlight it.
